@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登陆页面</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <script src="dlu.js"></script>
+</head>
+<style>
+    #canvas {
+        position: absolute;
+        z-index: -2
+    }
+</style>
+
+<body>
+    <canvas id="canvas"></canvas>
+    <div></div>
+    <div class="container" id="container">
+
+        <div class="header">
+            <h1>登录</h1>
+        </div>
+        <div class="main">
+            <form>
+                <span>
+                    <i class="fas fa-user"></i>
+                    <input type="text" placeholder="账号" id="inputuser">
+
+                </span>
+                <br>
+                <span>
+                    <i class="fas fa-lock"></i>
+                    <input type="password" placeholder="密码" id="inputpass">
+                </span>
+                <br>
+                <input type="button" class="logonbutt" value="登录" onclick="logon()">
+
+
+            </form>
+        </div>
+        <a class="regist" onclick="onclickzhuce()">《注册</a>
+    </div>
+
+    <div class="container1" id="container1" style="display:none;">
+        <div class="header">
+            <h1>注册</h1>
+        </div>
+        <div class="main">
+            <form>
+                <span>
+                    <i class="fas fa-user"></i>
+                    <input type="text" placeholder="账号" id="inputuser1">
+
+                </span>
+                <br>
+                <span>
+                    <i class="fas fa-lock"></i>
+                    <input type="password" placeholder="密码" id="inputpass1">
+                </span>
+                <br>
+                <span>
+                    <i class="fas fa-lock"></i>
+                    <input type="password" placeholder="确认密码" id="inputpass11">
+                </span>
+                <br>
+                <span>
+                    <i class="fa fa-envelope fs-2x color5"></i>
+                    <input type="text" placeholder="邮箱" id="emil">
+                </span>
+                <br>
+                <input type="button" class="regist1" value="注册" onclick="check()">
+
+            </form>
+        </div>
+        <a class="regist" onclick="onclickzhuce1()">《返回</a>
+    </div>
+
+
+
+
+
+
+</body>
+
+</html>
